@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arr1 = [4,11,27,82,10]
+        // var sortArr = selectSort(arr1);
+        // console.log(sortArr)
+        // function selectSort(arr){
+        //     for (var j = 0; j < arr.length - 1; j++) {
+        //         var minIndex = j;
+        //         for (var i = j; i < arr.length - 1; i++) {
+        //             if (arr[minIndex] >arr[i + 1]){
+        //                 minIndex = i + 1;
+        //             }
+        //         }
+        //         if(minIndex !=j) {
+        //             temp = arr[j];
+        //             arr[j] = arr[minIndex];
+        //             arr[minIndex] = temp;
+        //         }
+        //     }
+        //     return arr;
+        // }
+    function selectSort(arr){
+        for(var j = 0; j < arr.length - 1; j++) {
+            var minIndex = j;
+            //每次从j 开始比较最小值,并且j= 0 代表第一次比较
+            for (var i = j; i < arr.length - 1; i++){
+                
+                if(arr[minIndex] > arr[i + 1]){
+                     minIndex = i + 1;
+                }
+            }
+            if (minIndex !=j){
+               var temp = arr[j];
+               arr[j] = arr[minIndex];
+                arr[minIndex] = temp;
+            }
+        }
+        return arr
+    }
+    var result= selectSort([50, 34,55,66,37]);
+    console.log(result);
+     
+
+    </script>
+</body>
+</html>

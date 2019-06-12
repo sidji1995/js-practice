@@ -1,0 +1,278 @@
+.header-c,
+.title-c,
+.banner-c,
+.main-c,
+.footer-c,
+.copy-c{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	color: rgb(184, 184, 184);
+}
+body{
+	background:rgb(3,3,3) url(../img/background-left.png) 
+	no-repeat left 217px;
+}
+
+.header .header-c{
+	height: 60px;
+
+}
+.header .header-c .nav{
+	position:absolute;
+	top:0;
+	right:0;
+	height: 100%;
+}
+.header .header-c .nav .nav-item{
+	float: left;
+	width: 64px;
+	height:40px;
+	margin: 20px 18px 0;
+	border-bottom: rgb(223, 21, 21) 2px solid;
+	border-bottom: none;
+}
+.header .header-c .nav .nav-item a{
+	color: rgb(184, 184, 184);
+}
+.header-c .nav .nav-item.mr0{
+	width: 32px;
+}
+.header .header-c .nav .nav-item.active{
+	border-bottom: rgb(223, 21, 21) 2px solid;
+
+}
+.header .header-c .nav .nav-item.active a{
+	color:rgb(223, 21, 21); 
+}
+.header .header-c .nav .nav-item:hover{
+	border-bottom: rgb(223, 21, 21) 2px solid;
+
+}
+.header .header-c .nav .nav-item:hover a{
+	color:rgb(223, 21, 21); 
+}
+.logo{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 118px;
+	height: 44px;
+	background: url(../img/logo.png) no-repeat center;
+}
+.title-c{
+/* 	height: 370px; */
+	overflow: hidden;
+}
+.title .title-c .introduce{
+	position: relative;
+	margin: 146px auto 72px;
+	width: 517px;
+	height: 40px;
+}
+.title-c .introduce .wire{
+	width: 130px;
+	height: 2px;
+	background-color: rgb(223, 21, 21);
+}
+.introduce .wire.wire-left{
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.introduce .wire.wire-right{
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
+
+.title-c .introduce .we-en{
+	margin: 0 auto 6px;
+	text-align: center;
+	width: 110px;
+	line-height: 20px;
+	font-size: 20px;
+	color: rgb(223, 21, 21)
+}
+.title-c .introduce .we-cn{
+	text-align: center;
+	width: 100%;
+	line-height: 14px;
+	font-size: 14px;
+}
+.title-c .found{
+	margin: 0 auto;
+	width: 770px;
+	height: 182px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.banner{
+	height: 180px;
+}
+.banner-c{
+	width: 770px;
+	height: 100%;
+}
+.banner-c .number{
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+ .banner-c .number .number-c{
+	float: left;
+	width: 190px;
+	height: 72px;
+}
+
+.banner-c .number .number-c.left{
+	text-align: left;
+	border-right: 1px solid;
+
+}
+.banner-c .number .number-c.right{
+	position: relative;
+	width: 175px;
+	padding-right: 16px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	border-left: 1px solid;
+}
+.banner-c .number .number-c.right .picture{
+	margin-left: 35px;
+	width: 155px;
+	text-align: center;
+}
+.banner-c .number .number-c.right .suit{
+	position: absolute;
+	top: -8px;
+	right:0px;
+	font-size: 16px;
+	line-height: 16px;
+
+}
+.banner-c .number .number-c.both .tel-hour{
+	position: absolute;
+	font-size: 16px;
+	line-height: 16px;
+	top: -8px;
+	right: -32px;
+}
+.banner-c .number .number-c.both{
+	position: absolute;
+	right: 50%;
+  	margin-right: -95px; 
+	text-align: center;
+}
+.banner-c .number .number-c {
+	font-size: 60px;
+	line-height: 50px;
+}
+.banner-c .number .number-c p{
+	font-size: 14px;
+	width: 100%;
+	line-height: 28px;
+}
+.main-c{
+	color: rgb(184, 184, 184);
+	overflow: hidden;
+	height: 360px;
+}
+.main-c .passion{
+	margin: 30px auto 0;
+	width: 780px;
+	height: 326px;
+    border: rgb(223, 21, 21) solid 2px;
+
+}
+.main-c .passion .passion-c{
+	position: relative;
+	width: 620px;
+	height: 295px;
+	padding:35px 50px 0 110px;
+	font-size: 14px;
+    line-height: 30px;
+
+}
+.main-c .passion .passion-c p{
+	text-indent: 2em;
+}
+.passion-c .shadow{
+	position: absolute;
+	left: 40px;
+	bottom: 75px;
+	width: 36px;
+	height: 180px;
+	background: url(../img/shadow.png) no-repeat center;
+}
+.footer-c{
+	height: 346px;
+	overflow: hidden;
+}
+.footer-c .connect{
+	margin:143px 0 95px; 
+	width: 1200px;
+	height: 106px;
+}
+.footer-c .connect .nect-item{
+	float: left;
+	width: 370px;
+	height: 108px;
+	line-height: 36px;
+	font-size: 14px;
+
+}
+.footer-c .connect .nect-item.mr1{
+	border-right: rgb(184, 184, 184) solid 1px;
+}
+.footer-c .connect .nect-item.mr2{
+	margin-left: 88px;
+}
+.footer-c .connect .nect-item.mr3{
+	border-left: rgb(184, 184, 184) solid 1px;
+	text-align: right;
+}
+.footer-c .connect .icon{
+	width: 173px;
+	height: 28px;
+}
+.connect .icon .icon-item{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 15px;
+}
+.icon .icon-item.wb{
+	background: url(../img/wb.png) no-repeat center;
+}
+.icon .icon-item.qq{
+	background: url(../img/qq.png) no-repeat center;
+}
+.icon .icon-item.wx{
+	background: url(../img/wx.png) no-repeat center;
+}
+.icon .icon-item.bd{
+	background: url(../img/bd.png) no-repeat center;
+}
+.copy{
+	background-color: #222;
+}
+.copy .copy-c{
+	overflow: hidden;
+	height: 80px;
+}
+.copy-c .copyright{
+	margin: 22px auto;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 12px;
+}
+.connect .nect-item .lef {
+	width: 181px;
+	display: inline-block;
+	text-align: left;
+}

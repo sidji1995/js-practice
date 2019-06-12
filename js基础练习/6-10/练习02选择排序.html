@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //每一次从待排序的数据元素中选出最小或者最大;然后再从
+    //未排序的元素中寻找最小元素
+    //然后放到已排序序列的末尾;
+    var arr = [13, 23, 11, 5, 58];
+    //从小到大
+    for (var j = 0; j < arr.length - 1; j++) {
+        var minIndex = j;
+        for (var i = j; i <arr.length - 1; i++) {
+
+            if(arr[minIndex] > arr[i + 1]) {
+                minIndex = i + 1; 
+            }
+        }
+        if (minIndex != j) {
+            var temp = arr[j];
+            arr[j] = arr[minIndex];
+            arr[minIndex] = temp;
+
+        }
+        console.log(arr);
+    }
+    
+    </script>
+</body>
+</html>

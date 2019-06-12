@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //对象.xxx();调用对象的方法
+    var arr = [1,2,4,5];
+    var arr2 = [3,7,8];
+    var newArr = new Array(4,6,7,0);
+    // var arr3 = arr.concat(arr2);
+    // concat合并数组
+    //不会改变原数组
+   // var arr3 = arr.cooncat(arr2);
+    var arr3 = arr.concat(arr3);
+      //对象 赋值  对象.方法
+      console.log(arr3); 
+      //数组==>字符串
+      //语法:  数组名.join(分隔符)
+      //分隔符可选,如果省略,默认用逗号做(分隔符)
+      var arrStr = arr.join('-');
+      var arrStr2  = arr.join();
+      console.log(arrStr);
+      console.log(arrStr2);
+      
+
+      //字符串 变成数组 
+      //语法: 数组名.split(分隔符,数组长度)
+      // 通过指定分隔符,如果省略,默认以逗号分隔
+      //将字符串分割为字符串数组
+      var email = 'abc@163.com;cc@126.com;frg@qq.com';
+      var emailArr = email.split(';');
+      console.log(emailArr);
+      console.log(emailArr[1]);
+        
+      //添加元素 push()  unshift()
+      //push() 从后面加入元素 
+      //unshift 从前面添加元素
+      //都会改变原数组
+    var arr = [1,2,4,5];
+    var temp = arr.push('张三');
+    arr.unshift('李四');
+    arr.push('王五');
+    console.log(arr);
+    console.log(temp);//arr.push()从后加入元素
+    //但他的计算结果 为新数组的长度
+
+      
+    </script>
+</body>
+</html>

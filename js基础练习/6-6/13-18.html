@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>被5或6整除</title>
+</head>
+<body>
+    <script>
+    //需要遍历
+    // for(i = 1; i<= 1000; i+= ){
+    //     if(i % 5 == 0 || i % 6 == 0){
+    //         console.log(i)
+    //     }
+    // }
+    
+    // 14=====>找因数
+    // var num = 48 ;
+    // for(var i = 1; i <= 48; i++){
+    //     if( num % i == 0){
+    //         console.log(i);
+    //     }
+    // }
+    // for(var i = 1; i<= 60; i++){
+    //     if(i % 7!  ==0 && i % 10! == 7){
+    //         console.log(i)
+    //     }
+    // }
+
+    //====>水仙花
+    // for(var i = 100; i < 1000; i++){
+    //     var ge = i % 10;
+    //     var shi = Math.floor(i % 100 / 10);
+    //     var bai = Math.floor(i / 100);
+    //     if( Math.pow(ge , 3) + Math.pow(shi , 3) + Math.pow(bai , 3) ==i){
+    //         console.log(i)
+    //     }
+    // }
+    
+    //===> 求和 
+    //累加器
+    // var sum = 0;
+    // for(var i = 1; i <= 1000; i++){
+    //     sum += i
+    // }
+    // console.log(sum)
+    //===> 阶乘
+    // var sum = 0;
+    // for(var i = 1; i <= 13; i++){
+    //     cj = cj *i
+    // }
+    // console.log(cj)
+    //用户输入一个数，输出因数的个数
+    
+    //计数器
+    var num = Number(prompt('请输入数字'));
+    var count = 0;
+    for(var i = 1; i <= 48; i++){
+        if(num % i == 0){
+            count ++;
+        }
+        
+    }
+    console.log(count)
+    // console.log(count)
+            //  ++ 自增1,实现计数.
+    //     }
+    // }
+    //判断质数
+    // var num = Number(prompt('请输入数字'));
+    // var iszhi = true;
+    // for(var i = 2; i < num; i++){
+    //     if(num % i == 0){
+    //         iszhi = false;
+    //         break;
+    //     }
+    // }
+    // alert(iszhi ? '是质数' : '不是质数')
+
+
+    // var num = Number(prompt('请输入数字'));
+    // var iszhi = true;
+    // for(var i = 2; i < num; i++){
+    //     if(num % i == 0){
+    //         iszhi = false;
+    //         break;
+    //     }
+    // }
+    // alert(iszhi ? '是质数' : '不是质数')
+
+    // var num = Number(prompt('请输入数字'));
+    // var iszhi = true;
+    // for(i=2 ; i < mum ;  i++){
+    //     if(num % i == 0){
+    //         iszhi = false;
+    //     }
+    // }
+    // alert(iszhi ? '是质数' ;'不是质数')
+
+    // var arr = [58, 46, 59, 11];
+    // for( var i = 1 ; i < arr.length; i++ ){
+    //     for( var j = 0; j < arr.length - i; j++ ){
+    //         if(arr[j]>arr[j + 1]){
+    //             var temp = arr[j];
+    //             arr[j] = arr[j + 1];
+    //             arr[j + 1] = temp;
+    //         }
+            
+    //     }
+    //          console.log(arr);
+    // }
+
+    </script>
+</body>
+</html>

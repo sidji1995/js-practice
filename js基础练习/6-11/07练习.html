@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,3,4,9]
+        //toString()  //把数组转换成字符串,每一项用,分割
+        console.log(arr.toString());
+        arr.reverse();
+        console.log(arr);//反转数组  会修改原数组
+        
+        //sort();  //给数组排序,返回排序后的数组.如何排序看参数
+        var arr1 = [22,43,56,78,20,39];
+        //arr1.sort();//修改原数组
+        //无参:按照数组元素的首字符对应的unicode编码从
+        //从小到大排列数组元素
+        //带参:必须为函数
+        //函数中带有两个参数,返回值为负数,a排在b前面.
+        //等于零不动/
+        //返回值为正数,a拍在b后
+        arr1.sort(function(a,b){
+            return a - b;
+        })
+        console.log(arr1);
+        var nameArr = ['张三', '李四三', 'abc', 'abaghj'];
+        nameArr.sort(function(a,b){
+            return a.length - b.length;
+        })
+        console.log(nameArr);
+        
+        //indexOf()从左往右查找指定元素 找到就停止 返回
+        //lastIndexOf() 从后往前查找 找到就停止
+        //返回指定元素在数组当中下标 如果没有找到返回 -1
+        var arr3 = ['张三', '张三', '李四三', 'abc', 'abaghj'];
+        //判断指定元素 在不在数组当中
+        console.log(arr3.indexOf('张三'));
+        console.log(arr3.lastIndexOf('张三'));
+        
+       
+        
+
+        //splice()删除或替换当前数组的某些项目,参数start
+        //deleteCount,options要替换的项目
+        //修改原数组
+        var arr5 = [1,3,5,7];
+        //删除下标为1的元素
+        arr5.splice(1,1);
+        console.log(arr5);
+        var  arr6 = [11,21,5,9];
+        arr6.splice(1,2,'str');//不写替换项目 就是删除
+        console.log(arr6);
+        
+        var arr7 = [4,10,3];
+        //清空数组
+        arr7 = [];
+        // arr7.length = 0;
+        console.log(arr7);
+
+         //slice() 从当前数组中截取一个新的数组,参数start从0开始,end从1
+        //开始 返回一个新的数组,包含从start 到end
+        var arr4 = [31, 4, 6, 8, 0];
+        var newArr4 = arr4.slice(0,4);
+        console.log(newArr4);
+        console.log(arr4.slice(0));//复制数组
+
+        </script>
+</body>
+</html>

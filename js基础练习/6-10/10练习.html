@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //基本数据类型 作为参数传递
+        //函数内部会创建该数据的副本
+        //一切修改不会影响传进来的数据本身.
+        var x = 1;
+        function ins(x) {
+            x = x + 1;
+        }
+        ins(x);
+        console.log(x); //1
+        
+        var n = 3;
+        var arr = [1,2];
+
+        function foo(arr, n) {
+            arr.push(n);
+        }
+        foo(arr, n);
+        console.log(arr);
+    </script>
+</body>
+</html>

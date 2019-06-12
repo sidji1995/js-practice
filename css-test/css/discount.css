@@ -1,0 +1,229 @@
+.header-c,
+.main-c,
+.footer-c,
+.copy-c{
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	color:rgb(184, 184, 184);
+}
+body{
+	background:rgb(2, 2, 2) url(../img/disback.png) no-repeat -300px -50px;
+}
+.header{
+ 	height: 60px; 
+}
+.header .header-c{
+	height:100%;
+}
+
+.header .header-c .nav{
+	position:absolute;
+	top:0;
+	right:0;
+	height: 100%;
+}
+.header .header-c .nav .nav-item{
+	float: left;
+	width: 64px;
+	height:40px;
+	margin: 20px 18px 0;
+	border-bottom: rgb(223, 21, 21) 2px solid;
+	border-bottom: none;
+}
+.header .header-c .nav .nav-item a{
+	color: rgb(184, 184, 184);
+}
+.header-c .nav .nav-item.mr0{
+	width: 32px;
+}
+.header .header-c .nav .nav-item.active{
+	border-bottom: rgb(223, 21, 21) 2px solid;
+
+}
+.header .header-c .nav .nav-item.active a{
+	color:rgb(223, 21, 21); 
+}
+.header .header-c .nav .nav-item:hover{
+	border-bottom: rgb(223, 21, 21) 2px solid;
+
+}
+.header .header-c .nav .nav-item:hover a{
+	color:rgb(223, 21, 21); 
+}
+.logo{
+	position: absolute;
+	left: 0;
+	top: 16px;
+	width: 118px;
+	height: 44px;
+	background: url(../img/logo.png) no-repeat;
+}
+.main-c{
+	overflow: hidden;
+	position: relative;
+	height: 1910px;
+	margin: 0 auto;
+	color: rgb(184, 184, 184);
+
+}
+.main-c .title-c{
+	text-align: center;
+	width: 100%;
+	margin:150px auto 100px;
+}
+.main-c .title-c .text{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	margin: 0 70px;
+	font-size: 24px;
+	line-height: 30px;
+	color: red;
+}
+.main-c .title-c .line{
+	display: inline-block;
+	width: 130px;
+	border:1px solid red;
+ 	text-align:center; 
+ 	vertical-align: middle;
+}
+.main-c .text-cn{
+	line-height: 16px;
+	margin:9px auto 0;	
+	text-align: center;
+}
+.main-c .text-cn2{
+	margin: 10px auto 0;
+	line-height: 16px;
+	height: 16px;
+	text-align: center;
+}
+.main-c .box{
+	float: left;
+	margin: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+ #big{
+	width: 516px;
+	height: 458px;
+}
+ #small{
+	width: 516px;
+	height: 280px;
+}
+#discount{
+	width: 100%;
+	height: 80px;
+	background-color: rgb(33, 33, 33);
+	line-height: 80px;
+}
+#price{
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+	background-color: rgb(13, 13, 13);
+}
+#price .p1{
+	margin-top: 45px;
+	font-size: 36px;
+	line-height: 45px;
+	height: 45px;
+}
+#price .p2,.p3{
+	font-size: 14px;
+	line-height: 34px;
+	height: 34px;
+}
+#price .p4{
+	color: red;
+}
+.box a{
+	display: block;
+	width: 100%;
+	height: 458px;
+}
+.box .pic1{
+	background: url(../img/discount1.png) no-repeat;
+}
+.box .pic2{
+	background: url(../img/discount2.png) no-repeat 0 -75px;
+}
+.box .pic3{
+	background: url(../img/discount3.png) no-repeat 0 -2px;
+}
+.box .pic4{
+	background: url(../img/discount4.png) no-repeat 0 -25px;
+}
+.footer{
+	background-color: black;
+}
+.footer-c{
+	height: 346px;
+	overflow: hidden;
+}
+.footer-c .connect{
+	margin:120px 0 123px; 
+	width: 1200px;
+	height: 106px;
+}
+.footer-c .connect .nect-item{
+	float: left;
+	width: 370px;
+	height: 108px;
+	line-height: 36px;
+	font-size: 14px;
+
+}
+.footer-c .connect .nect-item.mr1{
+	border-right: rgb(184, 184, 184) solid 1px;
+}
+.footer-c .connect .nect-item.mr2{
+	margin-left: 88px;
+}
+.footer-c .connect .nect-item.mr3{
+	border-left: rgb(184, 184, 184) solid 1px;
+	text-align: right;
+}
+.footer-c .connect .icon{
+	width: 173px;
+	height: 28px;
+}
+.connect .icon .icon-item{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 15px;
+}
+.icon .icon-item.wb{
+	background: url(../img/wb.png) no-repeat center;
+}
+.icon .icon-item.qq{
+	background: url(../img/qq.png) no-repeat center;
+}
+.icon .icon-item.wx{
+	background: url(../img/wx.png) no-repeat center;
+}
+.icon .icon-item.bd{
+	background: url(../img/bd.png) no-repeat center;
+}
+.copy{
+	background-color: #222;
+}
+.copy .copy-c{
+	overflow: hidden;
+	height: 80px;
+}
+.copy-c .copyright{
+	margin: 22px auto;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 14px;
+}
+.connect .nect-item .lef {
+	width: 181px;
+	display: inline-block;
+	text-align: left;
+}

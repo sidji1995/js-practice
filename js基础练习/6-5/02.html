@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        console.log(date);
+        var year = date.getFullYear();
+        var month = date.getMonth()+1;
+        var day = date.getDate();
+        var weekDay = date.getDay();
+        var hour = date.getHours();
+        var milliSecond = date.getMilliseconds();
+        var second = date.getSeconds();
+        var min = date.getMinutes();
+        console.log(hour);
+        console.log(min);
+        console.log(second);
+        console.log(milliSecond);
+        console.log(weekDay);
+        var timeStr = year +'-'+month + '-' + day +'-'+hour + '-' + min + ':'
+         + second;
+         console.log(timeStr);
+         var stamp = date.getTime();
+         console.log(stamp);
+         //函数
+         console.log(Math.ceil(4.9));// 向上
+         console.log(Math.floor(4.3));//向下
+         var b = Math.max(4,5,9);
+         console.log(b);
+         console.log(Math.floor(Math.random()*8)+3);
+        //Math.floor(Math.random()*个数)+最小值\\
+        console.log(Math.pow(2,3));
+        console.log(Math.round(4.9999999999999999999999));
+        //round电脑存在摄入误差
+    </script>
+</body>
+</html>

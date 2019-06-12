@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冒泡排序</title>
+</head>
+<body>
+    <script>
+    var arr = [60,58,44,23];
+    //从小到大 排列 
+    //它重复地走访过要排序的元素列,依次比较两个相邻的元素
+    //错误 就把它们交换
+   // 走访的元素的工作是重复进行 知道没有相邻元素需要交换
+   //也就是说  该元素列已经排序完成.
+
+   //第一轮
+    for (var i= 0 ; i<arr.length-1;i++){
+        if (arr[i]>arr[i+1]){
+             var temp = arr[i];
+             arr[i] = arr[i+1];
+              arr[i+1] = temp;
+        }
+    }
+    console.log(arr)
+
+    //第二轮
+
+    for (var i = 0; i < arr.length - 1; i ++){
+        if(arr[i]>arr[i+1]){
+            var temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+        }
+    }
+    console.log(arr);
+    // 第三轮
+    for (var i = 0; i < arr.length - 1; i++ ){
+        if(arr[i]>arr[i+1]){
+            temp= arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+        }
+    }
+    console.log(arr);
+    </script>
+</body>
+</html>

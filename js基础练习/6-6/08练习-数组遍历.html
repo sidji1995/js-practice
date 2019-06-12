@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var arr = [30,29,28,16,18,24];
+    // //数组的遍历
+    // //找出数组当中小于20的元素
+    // for(i=0;i<arr.length;i++){
+    //     if(arr[i]<20){
+    //         console.log(arr[i]);
+    //     }
+    // }
+    //for in 循环 (常用于对象的遍历)
+    // for(var index in arr){
+    //     console.log(index);
+    //     sonsole.log(index);
+    //     //index 是数组的下标
+    //     //通过 for in 也遍历 了数组的下标
+      
+
+
+
+
+    //     console.log(arr[index]);
+    //     console.log(arr[index]);
+    //     //for(var index in arr)
+    //     //for(var index in arr)
+    //     //for(var index in arr)
+    //     //for(var index in arr)
+    // }
+    //     var newArr = new Array();
+    //     var newArr = new Array();
+    //     var newArr = new Array();
+    //     var newArr = new Array();
+    //     var newArr = new Array();
+        // for(var index in arr){
+        //     console.log(index);
+        //     console.log(arr[index]);
+        // }
+        // for(var index in arr){
+        //     console.log(index);
+        //     console.log(arr[index]);
+        // }
+        var arr = [1, 2, 4, 5];
+        var arr2 = [3, 7, 8];
+        var arr3 = arr.concat(arr2);
+        console.log(arr3);
+        console.log(arr);
+        var arrStr = arr.join('-');
+        var arrStr2 = arr.join();
+        console.log(arrStr);
+        console.log(arrStr2);
+        //字符串 变成数组
+        //语法 : 数组名.split(分隔符.数组长度)
+        var email = 'abc@163.com;cc@126.com;frg@qq.com';
+        var emailArr = email.split(';');
+        console.log(emailArr);
+        console.log(emailArr[1]);
+        var temp = arr.push('张三');
+        var temp3 = arr.unshift('李四');
+        arr.push('王五');
+        
+        console.log(temp3);
+        console.log(temp);
+        //从后面加入元素
+        //但是他的计算结果是新数组的长度,
+        var temp2 = arr.pop();
+        //删除最后一个元素,并且返回删除的元素本身;
+        arr.shift();
+        console.log(arr);
+        console.log(temp2);
+        for(var index in arr){
+            console.log(arr[index])
+        }
+    </script>
+</body>
+</html>

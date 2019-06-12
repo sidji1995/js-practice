@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(a);  
+        // var a = 2;
+
+        //变量提升
+        //真正的执行顺序
+        var a; //提升到最前边
+        console.log(a);
+        a = 2;
+
+
+        //函数提升 function关键字
+        sing(); // is not a function 
+        var sing = function () {
+            alert('sing')
+        }
+        //     在函数作用域也有声明的前提的特性
+        //使用 var 关键字声明的变量
+        //会在函数中所有的代码执行之前被声明.
+        
+        //函数声明也会在函数中所有的代码执行之前执行.
+        //在函数中,没有var声明的变量都是全局变量
+        //而且并不会提前声明.
+    </script>
+</body>
+</html>

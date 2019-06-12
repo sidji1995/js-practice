@@ -1,0 +1,236 @@
+.header-c,
+.mian-c,
+.footer-c,
+.copy-c{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	color: rgb(184, 184, 184);
+}
+.header{
+	height: 478px;
+	background: url(../img/stone.png) no-repeat center;
+}
+.header .header-c{
+	height: 60px;
+}
+
+.header .header-c .nav{
+	position:absolute;
+	top:0;
+	right:0;
+	height: 100%;
+}
+.header .header-c .nav .nav-item{
+	float: left;
+	width: 64px;
+	height:40px;
+	margin: 20px 18px 0;
+	border-bottom: rgb(223, 21, 21) 2px solid;
+	border-bottom: none;
+}
+.header .header-c .nav .nav-item a{
+	color: rgb(184, 184, 184);
+}
+.header-c .nav .nav-item.mr0{
+	width: 32px;
+}
+.header .header-c .nav .nav-item.active{
+	border-bottom: rgb(223, 21, 21) 2px solid;
+
+}
+.header .header-c .nav .nav-item.active a{
+	color:rgb(223, 21, 21); 
+}
+.header .header-c .nav .nav-item:hover{
+	border-bottom: rgb(223, 21, 21) 2px solid;
+
+}
+.header .header-c .nav .nav-item:hover a{
+	color:rgb(223, 21, 21); 
+}
+.logo{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 118px;
+	height: 44px;
+	background: url(../img/logo.png) no-repeat center;
+}
+.main{
+	background-color: rgb(22, 22, 22);
+}
+.main-c{
+	overflow: hidden;
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	color: rgb(184, 184, 184);
+
+}
+.main-c .title-c{
+	text-align: center;
+	width: 100%;
+	margin:80px auto 0;
+}
+.main-c .title-c .text{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	margin: 0 70px;
+	font-size: 24px;
+	line-height: 30px;
+}
+.main-c .title-c .line{
+	display: inline-block;
+	width: 130px;
+	border:1px solid red;
+ 	text-align:center; 
+ 	vertical-align: middle;
+}
+.main-c .text-cn{
+	line-height: 16px;
+	margin:9px auto 0;	
+	text-align: center;
+}
+.main-c .picture{
+	width: 100%;
+	height: 600px;
+	margin:30px auto 0;
+}
+.picture .nav{
+	overflow: hidden;
+	width: 168px;
+	height: 250px;
+}
+.picture .nav.nav-top{
+	background-color: rgb(34, 34,34);
+}
+.picture .nav.nav-bottom{
+	background-color: rgb(122, 23, 23);
+}
+.picture .dots{
+	position: relative;
+	display: block;
+	margin: 116px 56px;
+	width: 37px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 18px;
+	padding-right: 20px;
+	text-align: center;
+	color: rgb(184, 184, 184);
+}
+.picture .icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background: url(../img/arrow.png) no-repeat center;
+}
+.picture .photofir{
+	float: left;
+	width: 258px;
+	height: 500px;
+	background: url(../img/photo1-pre.png) no-repeat center;
+}
+.picture .box{
+	float: left;
+	width: 168px;
+	height: 500px;
+}
+.picture .photosec{
+	float: left;
+	width: 258px;
+	height: 500px;
+	background: url(../img/photo2.png) no-repeat center;
+}
+.picture .photothird{
+	float: left;
+	width: 258px;
+	height: 500px;
+	background: url(../img/photo3.png) no-repeat center;
+}
+.picture .photofour{
+	float: left;
+	width: 258px;
+	height: 500px;
+	background: url(../img/photo4.png) no-repeat center;
+
+}
+.picture .photofir:hover{
+	background:url(../img/zhongji.png) no-repeat center;
+}
+.footer{
+	background-color: black;
+}
+.footer-c{
+	height: 346px;
+	overflow: hidden;
+}
+.footer-c .connect{
+	margin:120px 0 123px; 
+	width: 1200px;
+	height: 106px;
+}
+.footer-c .connect .nect-item{
+	float: left;
+	width: 370px;
+	height: 108px;
+	line-height: 36px;
+	font-size: 14px;
+
+}
+.footer-c .connect .nect-item.mr1{
+	border-right: rgb(184, 184, 184) solid 1px;
+}
+.footer-c .connect .nect-item.mr2{
+	margin-left: 88px;
+}
+.footer-c .connect .nect-item.mr3{
+	border-left: rgb(184, 184, 184) solid 1px;
+	text-align: right;
+}
+.footer-c .connect .icon{
+	width: 173px;
+	height: 28px;
+}
+.connect .icon .icon-item{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 15px;
+}
+.icon .icon-item.wb{
+	background: url(../img/wb.png) no-repeat center;
+}
+.icon .icon-item.qq{
+	background: url(../img/qq.png) no-repeat center;
+}
+.icon .icon-item.wx{
+	background: url(../img/wx.png) no-repeat center;
+}
+.icon .icon-item.bd{
+	background: url(../img/bd.png) no-repeat center;
+}
+.copy{
+	background-color: #222;
+}
+.copy .copy-c{
+	overflow: hidden;
+	height: 80px;
+}
+.copy-c .copyright{
+	margin: 22px auto;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 14px;
+}
+.connect .nect-item .lef {
+	width: 181px;
+	display: inline-block;
+	text-align: left;
+}
+

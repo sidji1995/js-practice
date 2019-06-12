@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 与 &&  (并且)  都真 才 真
+        // 或 ||  (或者)  有 一个 为真  即为 真
+        // 非 !    (取反)  
+
+        console.log(false && true); // false
+        console.log(true || false); //true
+        console.log(!true); // false
+
+        // 判断 2  在不在 3和5之间
+        console.log(2 > 3 && 2 < 5); // fasle
+        // 判断一个人是否能够考驾照，交通法规定18~70岁能够考驾照。
+
+        // var age = Number(prompt('请输入您的年龄')); // string
+        // console.log(age);
+        // console.log(age > 18 && age < 70);
+
+        // 逻辑运算符 返回的是 操作数
+        var a5 = "Cat" && "Dog"; // 遇到false 就返回
+        var a6 = false && "Cat"; // fasle
+        var a7 = "Cat" && ""; // ""
+        console.log(a7)
+        // || 遇到 true  就返回
+        var o5 = "Cat" || "Dog"; // Cat
+        var o6 = false || "Cat"; // Cat
+        var o7 = "Cat" || false; // Cat
+
+
+        var n3 = !"Cat"; // false
+    </script>
+</body>
+
+</html>

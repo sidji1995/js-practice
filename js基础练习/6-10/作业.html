@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业</title>
+</head>
+<body>
+    <script>
+    //============111
+    // var a = Number(prompt('请输入直径'));
+    // var   zhou = 2 * a * Math.PI;
+    // var mian = a * a * Math.PI;
+    // console.log('周长是'+ zhou);
+    // console.log('面积是' + mian);
+
+   
+   
+    //==============333求一组数中的最大值和最小值
+    
+    // var arr = [2,3,4,6,6];
+    // var max = arr[0];
+    // var min = arr[0];
+    // for(i = 0; i < arr.length; i++){
+    //     if(max <= arr[i]){
+    //         max = arr[i];
+    //     }else{
+    //         min = arr[i];
+    //     }
+    //  }    
+    // console.log(max);
+    // console.log(min);
+
+  
+
+
+    // console.log(Math.max(...arr));
+    // console.log(Math.min(...arr));
+
+
+    //===================4444翻转数组，返回一个新数组
+
+    var arr = [4,6,11,17,21];
+    for( var i = 0; i < arr.length/2; i++){
+        var temp = arr[arr.length-1-i];
+        arr[arr.length-1-i] = arr[i];
+        arr[i] = temp;
+    }
+    console.log(arr)
+
+    //两两交换, 交换次数为 arr.length / 2;
+    
+
+
+//==========> 法二
+
+    // var arr = [4,6,11];
+    // var ReArr=[]
+    // for( var i=arr.length-1; i>=0;i--){
+    //     ReArr[ReArr.length]=arr[i];
+    // }
+    //     console.log(ReArr);
+
+//==========>法三
+    // var arr = [4,6,11];
+    // var ReArr=[]
+    // for( var i=arr.length-1; i>=0;i--){
+    //      ReArr.push(arr[i])
+    // }
+    //     console.log(ReArr);
+
+//==========>  5、对数组排序，从大到小
+    // var arr = [30,29,31,11];
+    // for(var i = 1; i < arr.length; i++){
+    //     //控制交换的轮数
+    //     for(var j =arr.length - i;j > 0; j--){
+    //         if(arr[j]>arr[j - 1]){
+    //             temp = arr[j];
+    //             arr[j] = arr[j - 1];
+    //             arr[j - 1] = temp;
+    //         }
+    //     }
+    //     console.log(arr);
+    // }
+
+    //==========法二 从大到小
+        // var arr = [30,29,31,11];
+        //  for(var i =1; i < arr.length; i++){
+        //      for(j = 0; j < arr.length - i; j++){
+        //          if(arr[j] < arr[j + 1]){
+        //              var temp = arr[j];
+        //              arr[j] = arr[j + 1];
+        //             arr[j + 1] = temp;
+        //         }
+        //     }
+        //         console.log(arr)
+        // }
+
+    //==========>求1~10的阶乘
+
+
+ 
+
+
+    //==========> 我的小鱼 你醒啦
+
+//     function Recursion(depth) {
+//     console.log('抱着');
+//     if (!depth) {
+//         console.log('我的小鲤鱼')
+//     } else {
+//         Recursion(--depth);  // 递归调用
+//     }
+//     console.log('的我');
+// }
+
+// console.log('吓得我抱起了');
+// Recursion(2) 
+
+//==========>求阶乘
+
+//  function fun(X){
+//     if(X == 1){
+       
+//        return 1;
+       
+//     }{
+        
+//         return ( fun(X - 1) * X);
+        
+//     }
+//     console.log(X);
+//  }
+//  var result =fun(5);
+// console.log(result);
+ 
+
+
+ //==========>求1!+2!+3!+....+n!
+//     var sum = 0;
+//     for(var i = 1; i <= 5; i++){
+//         sum += fun2(i);
+//      }
+//         console.log(sum);
+
+//     function fun2(n){
+//         // var n=i
+//         console.log(n);
+//         if(n == 1){
+//          return 1;
+//      }
+//          return fun2(n - 1) + n; 
+//  }
+// var result = fun2(5);
+ 
+//==============================> 
+
+// for (i = 1; i <= 100; i++) {
+//     if ((i+12) % 33 == 0){
+//         console.log('找到了符合条件的一个数' + i);
+//         break;
+//     }
+// }
+
+// for (i = 1; i <= 100; i++){
+//     if (i % 3 == 0){
+//         console.log('这个数能被3整除',i);
+//         continue;
+//     }
+//     if (i % 7 == 0){
+//         console.log('这个数能被7整除',i);
+//     }
+// }
+//能被3 或或或或 能被7 continue; 不能被三整除continue 执行下边循环
+//能被三整除的跳出循环    
+
+    //  for (var i = 0; i < 10; i++) {
+    //     //     // 内层for循环 走完之后 ,外层 for 循环的 i  才会加  步长
+    //         for (var j = 0; j < 10; j++) {
+    //             console.log('i====>' + i + 'j====>' + j )
+    //         }
+    //     }
+
+    // for(var i = 1; i < 10; i++){
+    //     var str = '';
+    //     for(var j = 1; j < 10; j++){
+    //         if(j <= i){
+    //         str = str + i + '*' + j + '=' + i * j + ';';
+    //         }
+    //     }
+    //     console.log(str);
+    //     //定义一个str空值变量 累加 99表 每行 个数
+    // }
+
+    //==========================>数组
+
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var num = 0;
+    // do{
+    //     console.log(num);
+    //     num++;
+    // }while(num<10)
+    // //do while 先执行 后判断
+    // var count = 10;
+    // // do{
+    // //     console.log(count);
+    // //     count++;
+    // // }while(count<10)
+    
+    // while(count<10){
+    //     console.log(count)
+    // }
+    // // 假如投资的年利率为5%
+   // 试求从1000块增长到5000块，需要花费多少年
+   
+    var count = 0;
+    for(var vest = 1000;vest < 5000;vest++){
+        vest*=1.05;
+        count++;
+    }
+    console.log(count);
+    
+    while(vest<5000){
+        vest *=1.05;
+        count++;
+    }
+    console.log(count); 
+
+    var money = 1000;
+    var count = 0;
+    while(money<5000){
+        money *=1.05
+        count++
+    }
+    console.log(count)
+
+    //年利率每年5% money *=1.05
+    //  money从1000元涨到5000元,循环变量 money<5000
+     
+    //需要花费多少年,累加器
+    // var count =  0  count++
+    //while语句 也可以实现循环 执行某段代码
+    var money = 1000;  
+    var count = 0;   //累加器
+    while(money<5000){
+        money *=1.05;
+        count++;  //累加器
+    }
+    console.log(count);
+    //总利率=1000*(1+年利率)
+    var  money=1000;
+    var count = 0;
+    while(money<5000){
+        money *=1.05;
+        count++;
+    }
+    console.log(count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //与&& both为真
+    //或||  one 为真
+    //非  取反
+    console.log(!true);
+    console.log(2>3 && 2<5); //false
+    //判断一个人是否能够考驾照,交通法规定18~70岁能够考驾照.
+    var age=Number(prompt('请输入您的年龄')); 
+    if(18<age && age<=70){
+        alert('恭喜您,您的年龄符合交通法规定');
+    }else{
+        alert('抱歉,您的年龄不符合交通法规定');
+    }
+    var a1 = "Cat" && "Dog";//遇到 false就返回
+    var a2="Cat" && "";
+    console.log(a2);   //逻辑运算符 返回的是 操作数
+    var n3 = !"cat"; //false
+    </script>
+</body>
+</html>
